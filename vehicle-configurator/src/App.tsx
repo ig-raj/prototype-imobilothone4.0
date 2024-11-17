@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import './App.css';
 import axios from "axios";
 import ColorPicker from "./ColorPicker";
 import VehicleSelector from "./VehicleSelecto";
 import VehicleImage from "./VehicleImage";
+
 
 // Define types for user data and recommendations
 interface UserData {
@@ -42,7 +44,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="App" style={{ textAlign: "center", padding: "20px" }}>
+    <div className="App" style={{ textAlign: "center", padding: "20px" }}> 
       <h2>Vehicle Configurator</h2>
 
       {/* User input form for recommendation */}
